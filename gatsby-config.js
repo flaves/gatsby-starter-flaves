@@ -7,7 +7,7 @@ module.exports = {
     title: `Gatsby Starter Opeah`,
     description: `Gatsby starter for personal project.`,
     author: `@opeah`,
-    siteUrl: ``,
+    siteUrl: `https://www.example.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -32,14 +32,13 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`,
       },
     },
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: ``,
-        // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-contentful`,
+    //   options: {
+    //     spaceId: ``,
+    //     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+    //   },
+    // },
     `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
     {
