@@ -47,6 +47,14 @@ module.exports = {
         trackingId: ``,
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Open+Sans:300,400,600,700,800'],
+        },
+      },
+    },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-netlify`,
   ],
