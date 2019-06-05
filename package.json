@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-starter-opeah",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Starter for personal project",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Sebastien Crepin <seb_crep@hotmail.com>",
   "dependencies": {
     "dotenv": "^8.0.0",
     "gatsby": "^2.8.3",
@@ -44,9 +44,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/opeah/gatsby-starter"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/opeah/gatsby-starter/issues"
   }
 }
