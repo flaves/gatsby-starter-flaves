@@ -66,5 +66,11 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-catch-links`,
+    {
+      resolve: `gatsby-plugin-polyfill-io`,
+      options: {
+        features: [`default`, `es2017`, `es5`, `es6`, `es7`],
+      },
+    },
   ],
 };
