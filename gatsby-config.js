@@ -28,6 +28,14 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`,
       },
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: ``,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
     `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
     {
@@ -37,6 +45,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
-      `gatsby-plugin-netlify`
+    `gatsby-plugin-netlify`,
   ],
-}
+};
