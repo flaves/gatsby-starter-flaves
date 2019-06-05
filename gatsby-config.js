@@ -29,7 +29,7 @@ module.exports = {
         background_color: `#0F111A`,
         theme_color: `#0F111A`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/gatsby.png`,
       },
     },
     // {
