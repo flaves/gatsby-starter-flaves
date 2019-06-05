@@ -36,6 +36,7 @@ module.exports = {
         trackingId: ``,
       },
     },
-    `gatsby-plugin-sitemap`
+    `gatsby-plugin-sitemap`,
+      `gatsby-plugin-netlify`
   ],
 }
