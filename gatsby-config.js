@@ -3,6 +3,7 @@ module.exports = {
     title: `Gatsby Starter Opeah`,
     description: `Gatsby starter for personal project.`,
     author: `@opeah`,
+    siteUrl: ``,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -35,5 +36,6 @@ module.exports = {
         trackingId: ``,
       },
     },
+    `gatsby-plugin-sitemap`
   ],
 }
