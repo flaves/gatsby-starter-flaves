@@ -35,13 +35,6 @@ module.exports = {
         icon: `src/images/gatsby.png`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-contentful`,
-    //   options: {
-    //     spaceId: ``,
-    //     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-    //   },
-    // },
     `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
     {

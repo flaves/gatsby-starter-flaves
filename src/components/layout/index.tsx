@@ -1,9 +1,11 @@
 import React from 'react';
 
-interface props {
-  children: React.ReactNode
+interface LayoutProps {
+  children: React.ReactNode;
 }
 
-const Layout = ({ children }: props) => <main role="main">{children}</main>;
+const Layout: React.FC<LayoutProps> = ({ children }) => (
+  <main role="main">{children}</main>
+);
 
 export default Layout;
