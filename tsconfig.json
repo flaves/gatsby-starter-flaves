@@ -3,6 +3,7 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "jsx": "react",
-    "strict": true
+    "strict": true,
+    "noImplicitAny": true
   }
 }

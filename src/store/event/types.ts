@@ -1,6 +1,6 @@
 import { ThunkAction } from 'redux-thunk';
 
-import { State } from '../../reducers';
+import { State } from '../index';
 
 export const ENABLE_LOADING = `ENABLE_LOADING`;
 export const DISABLE_LOADING = `DISABLE_LOADING`;

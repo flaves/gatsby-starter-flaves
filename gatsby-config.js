@@ -4,25 +4,27 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Opeah`,
+    title: `Gatsby Starter Flaves`,
     description: `Gatsby starter for personal project.`,
-    author: `@opeah`,
+    author: `@flaves`,
     siteUrl: `https://www.example.com`,
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-typescript`,
-    },
+    `gatsby-plugin-catch-links`,
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-netlify`,
+    `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        trackingId: ``,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -35,20 +37,10 @@ module.exports = {
         icon: `src/images/gatsby.png`,
       },
     },
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-polyfill-io`,
       options: {
-        trackingId: ``,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Open+Sans:300,400,600,700,800'],
-        },
+        features: [`default`, `es2015`, `es2016`, `es2017`, `es2018`],
       },
     },
     {
@@ -59,13 +51,11 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-sitemap`,
-    `gatsby-plugin-netlify`,
-    `gatsby-plugin-catch-links`,
     {
-      resolve: `gatsby-plugin-polyfill-io`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        features: [`default`, `es2017`, `es5`, `es6`, `es7`],
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
   ],

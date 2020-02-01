@@ -1,4 +1,5 @@
 import React from 'react';
+import { css } from '@emotion/core';
 
 interface EmojiProps {
   label: string;
@@ -7,11 +8,13 @@ interface EmojiProps {
 
 const Emoji: React.FC<EmojiProps> = ({ label, symbol }) => (
   <span
-    className="Emoji"
     role="img"
-    aria-label={label ? label : ``}
+    aria-label={label}
     aria-hidden={!label}
-    style={{ marginRight: `5px`, display: `inline-block` }}
+    css={css`
+      display: inline-block;
+      margin-right: 5px;
+    `}
   >
     {symbol}
   </span>
