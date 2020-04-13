@@ -8,13 +8,15 @@ import store from './src/store';
 import reset from './src/styles/reset';
 import theme from './src/styles/theme';
 
-interface wrapWithProviderProps {
+interface WrapWithProviderProps {
   element: HTMLElement;
 }
 
-export default ({ element }: wrapWithProviderProps) => (
+const WrapWithProvider = ({ element }: WrapWithProviderProps) => (
   <ReduxProvider store={store}>
     <Global styles={reset} />
     <ThemeProvider theme={theme}>{element}</ThemeProvider>
   </ReduxProvider>
 );
+
+export default WrapWithProvider;
