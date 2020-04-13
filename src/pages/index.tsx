@@ -2,18 +2,11 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/helpers/seo';
-import mq from '../styles/mq';
 
-const Home = () => (
+const Home: React.FC = () => (
   <Layout>
     <SEO title="Home" />
-    <h1
-      css={mq({
-        color: [`red`, `blue`, `green`],
-      })}
-    >
-      Hello
-    </h1>
+    <h1>Gatsby Starter Flaves</h1>
   </Layout>
 );
 
