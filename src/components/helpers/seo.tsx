@@ -1,11 +1,23 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { graphql, useStaticQuery } from 'gatsby';
+import { Helmet } from 'react-helmet';
+
+interface MetaName {
+  content: string;
+  name: string;
+  property?: undefined;
+}
+
+interface MetaProp {
+  content: string;
+  name?: undefined;
+  property: string;
+}
 
 interface SEOProps {
   description?: string;
   lang?: string;
-  meta?: Array<any>;
+  meta?: MetaName[] | MetaProp[];
   title: string;
 }
 
