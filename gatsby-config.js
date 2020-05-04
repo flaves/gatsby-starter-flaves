@@ -2,12 +2,16 @@ require('dotenv').config({
   path: `.env`,
 });
 
+const config = {
+  siteUrl: `https://flav.es`,
+};
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Starter Flaves`,
     description: `Gatsby starter for personal project.`,
     author: `@flaves`,
-    siteUrl: `https://www.example.com`,
+    siteUrl: config.siteUrl,
   },
   plugins: [
     `gatsby-plugin-catch-links`,
@@ -64,10 +68,10 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: `gatsby-plugin-robots-txt`,
       options: {
-        host: 'https://www.example.com',
-        sitemap: 'https://www.example.com/sitemap.xml',
+        host: config.siteUrl,
+        sitemap: `${config.siteUrl}/sitemap.xml`,
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
