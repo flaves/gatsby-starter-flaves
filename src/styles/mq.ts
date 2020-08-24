@@ -1,12 +1,12 @@
 const breakpoints: {
   [key: string]: number;
 } = {
+  xs: 375,
   sm: 576,
   md: 768,
   lg: 992,
   xl: 1200,
   xxl: 1440,
-  xxxl: 1600,
 };
 
 const mq = (value: `sm` | `md` | `lg` | `xl` | `xxl` | `xxxl`) => {
