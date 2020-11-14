@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 // Biennale
 import BiennaleHeavy from '../fonts/biennale-heavy.otf';

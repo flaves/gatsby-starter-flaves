@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 import { BiennaleFont } from './fonts';
 import marks from './marks';

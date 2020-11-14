@@ -1,9 +1,9 @@
 import React from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 interface EmojiProps {
   label: string;
-  symbol: any;
+  symbol: string;
 }
 
 const Emoji: React.FC<EmojiProps> = ({ label, symbol }) => (
